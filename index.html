@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Rock Paper Scissors</title>
+</head>
+
+<body style="
+    text-align:center;
+    font-family:Arial;
+    background: linear-gradient(135deg, #1e1e2f, #2a2a40);
+    color:white;
+    padding-top:50px;
+">
+
+<h1 style="font-size:40px;">🎮 Rock Paper Scissors</h1>
+
+<h2 style="color:#00adb5;">
+    Score → You {{user_score}} | Computer {{comp_score}}
+</h2>
+
+<div style="margin:20px;">
+    <form method="POST">
+        <button name="choice" value="rock"
+        style="padding:10px 20px; margin:5px; border-radius:10px;">🪨 Rock</button>
+
+        <button name="choice" value="paper"
+        style="padding:10px 20px; margin:5px; border-radius:10px;">📄 Paper</button>
+
+        <button name="choice" value="scissors"
+        style="padding:10px 20px; margin:5px; border-radius:10px;">✂️ Scissors</button>
+    </form>
+</div>
+
+<h3 style="color:#ff5722;">{{result}}</h3>
+
+<p style="font-size:18px;">
+    You: {{user_choice}} 😎 <br>
+    Computer: {{comp_choice}} 🤖
+</p>
+
+<h2 style="color:yellow;">{{winner}}</h2>
+
+<form method="POST">
+    <button name="reset"
+    style="padding:8px 20px; border-radius:10px; background:#ff5722; color:white;">
+        🔁 Reset
+    </button>
+</form>
+
+<br><br>
+
+<a href="/stats"
+style="color:#00adb5; font-size:18px; text-decoration:none;">
+📊 View Statistics
+</a>
+
+</body>
+</html>
